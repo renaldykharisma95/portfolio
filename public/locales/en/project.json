@@ -1,0 +1,18 @@
+{
+  "title": "Projects",
+  "projectDetails": "Project Details",
+  "projects": [
+    {
+      "description": "Indibiz (https://indibiz.co.id/) is a digital platform from Telkom Indonesia that provides various solutions to support business transformation, especially for SME players. Through services such as business internet, operational solutions, financing, HR training, and digital promotion, Indibiz helps business players manage and develop their businesses efficiently and integrated."
+    },
+    {
+      "description": "MyTEnS (https://mytens.co.id/) is a digital platform from Telkom Indonesia designed to support business transformation in the enterprise, medium, and government sectors. Through services such as Omni Channel Assistant, business process management, fintech solutions, cloud services, and IoT, MyTEnS helps companies improve operational efficiency, security, and customer experience comprehensively. The platform also provides features such as trouble ticket systems, project monitoring, and billing management, making it an integrated digital control center for modern business needs."
+    },
+    {
+      "description": "One Data USU (https://onedata.usu.ac.id/) is an integrated digital platform owned by the University of North Sumatra (USU) developed to simplify and integrate data management in the campus environment. As part of USU's digital transformation, this platform aims to improve efficiency, accuracy, and quality of academic and administrative services. With support from Telkom Indonesia, One Data USU becomes an important foundation in the digitalization of university information systems, enabling more structured data access and more precise decision making."
+    },
+    {
+      "description": "SIMLITBINUS (https://simlitbinus.apps.binus.ac.id/) is an internal research information system owned by Bina Nusantara University (BINUS) designed to manage the entire research activity cycle digitally. This platform facilitates the process of proposal submission, evaluation, funding, to reporting research results for lecturers and researchers in the BINUS environment. With integration to various supporting applications such as e-PDP, Scopus Apps, and IPR systems, SIMLITBINUS supports transparency, efficiency, and accountability in the implementation of internal research. This platform is also connected to the BINUS Research and Technology Transfer Office (RTTO), which manages various grant schemes such as BINUS Basic-Applied Research (PTB), BINUS International Research (PIB), and Binus Environmental Care (BPL), as well as providing guidance and administrative support for researchers."
+    }
+  ]
+}

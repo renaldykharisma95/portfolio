@@ -1,17 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./i18n";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
+import i18n from "i18next";
+
+// A wrapper to extract language from URL and update i18n
+const LanguageWrapper = () => {
+  const { lng } = useParams();
+
+  // set language if different
+  if (i18n.language !== lng) {
+    i18n.changeLanguage(lng);
+  }
+
+  return <App />;
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      {/* Redirect root to /en by default */}
+      <Route path="/" element={<Navigate to="/en" replace />} />
+
+      {/* Match /en or /id routes and pass to App */}
+      <Route path="/:lng/*" element={<LanguageWrapper />} />
+    </Routes>
+  </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

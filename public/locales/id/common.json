@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "name": "Muhammad Renaldy Kharisma",
+    "menu": {
+      "home": "Beranda",
+      "about": "Tentang",
+      "projects": "Proyek",
+      "contacts": "Kontak"
+    },
+    "toggleMenu": "Buka menu"
+  }
+}
