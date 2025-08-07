@@ -1,0 +1,89 @@
+{
+  "ui": {
+    "userIconAlt": "User Icon",
+    "readMore": "read more",
+    "readLess": "read less"
+  },
+  "recommendations": [
+    {
+      "firstName": "Fahri",
+      "lastName": "Zulkarnaen",
+      "company": "Telkom Indonesia",
+      "jobTitle": "Mobile Developer - Pijar Mahir",
+      "text": "I'm really happy to recommend Renaldy as an excellent frontend developer. I've worked with him on several projects, and he's consistently impressed me with his technical skills across the board. While he's great with all frontend technologies, his expertise in Angular is on another level - he really knows how to leverage the framework to build powerful, efficient applications.  What makes him stand out isn't just his coding skills, but how well he manages projects. He always delivers quality work on time, no matter how complex the requirements get.  One thing I really appreciate about him is how proactive he is—when he hits a blocker, he doesn't sit around waiting for help. He reaches out right away to solve problems before they can derail the timeline.   His combination of technical know-how and straightforward communication makes him a fantastic teammate. Any team would be lucky to have him on board.",
+      "creationDate": "03/03/25, 04:19 AM"
+    },
+    {
+      "firstName": "Emma",
+      "lastName": "Sharahwati",
+      "company": "Telkom Indonesia",
+      "jobTitle": "UI/UX Designer",
+      "text": "I had the pleasure of working with Renaldy on the Indibiz project, where he played a crucial role as a Frontend Developer. His expertise in creating seamless, responsive, and user-friendly interfaces greatly contributed to the project's success.  Beyond his technical skills, he is a great team player who always open to feedback, proactive in problem-solving, and highly collaborative. His ability to translate UI/UX designs into high-quality code made our workflow smooth and efficient.  I highly recommend Renaldy to any team looking for a skilled and dedicated Frontend Developer!",
+      "creationDate": "02/26/25, 08:18 AM"
+    },
+    {
+      "firstName": "Abi",
+      "lastName": "Karami",
+      "company": "Telkom Indonesia",
+      "jobTitle": "UI/UX Designer",
+      "text": "I've seen Renaldy continuously grow and refine himself for the better. He's a resilient individual who takes on responsibilities with excellence.  His expertise as a front-end web developer is not to be underestimated. I fully recommend him to collaborate with your team!",
+      "creationDate": "02/25/25, 11:19 AM"
+    },
+    {
+      "firstName": "Cakra",
+      "lastName": "Danu Sedayu",
+      "company": "Telkom Indonesia",
+      "jobTitle": "Frontend Developer",
+      "text": "Working with Reynald has been an amazing experience. He is a passionate Frontend Developer with deep expertise not only in Next.js but also in Angular. He has a strong eye for detail and a growth mindset, always eager to explore new tools and technologies to enhance his work. On top of that, he is humble, approachable, and a great team player. Any team would be fortunate to have him!",
+      "creationDate": "02/20/25, 03:59 AM"
+    },
+    {
+      "firstName": "Adhika Handaru",
+      "lastName": "Pratyantoro",
+      "company": "PT. Dans Multi Pro",
+      "jobTitle": "Software Quality Assurance",
+      "text": "have had the pleasure of working with Muhammad Renaldy Kharisma, a skilled and adaptable Front-End Developer. Renaldy consistently demonstrates a keen eye for detail, crafting intuitive and responsive user interfaces. He thrives in collaborative environments, always offering valuable insights and quickly adjusting to new challenges. His ability to work efficiently with cross-functional teams, along with his strong technical expertise, makes him a standout contributor. I highly recommend him for any team looking for a reliable and innovative developer.",
+      "creationDate": "02/20/25, 02:46 AM"
+    },
+    {
+      "firstName": "Achmad",
+      "lastName": "Fikry",
+      "company": "Telkom Indonesia",
+      "jobTitle": "Software Quality Assurance",
+      "text": "I had the pleasure of working closely with Renaldy on several projects at Telkom. He consistently demonstrated exceptional proficiency in JavaScript, particularly with frameworks like React and Angular. His ability to seamlessly integrate complex functionalities into user-friendly interfaces significantly enhanced our project's efficiency. Beyond technical skills, he is an excellent collaborator. He regularly facilitated knowledge-sharing sessions, helping to elevate the team's overall competency in modern front-end technologies. His dedication to staying updated with industry trends and best practices makes him an invaluable asset to any development team. I highly recommend Renaldy for any organization seeking a skilled and innovative Front-End Developer.",
+      "creationDate": "02/20/25, 02:46 AM"
+    },
+    {
+      "firstName": "Tegar",
+      "lastName": "Priambudi",
+      "company": "Telkom Indonesia",
+      "jobTitle": "Document Engineer",
+      "text": "I had the pleasure of working alongside Renaldy in the same team, and I can confidently say he is a skilled and reliable frontend engineer. He writes clean, efficient code, tackles challenges with a problem-solving mindset, and is always a great team player. Any team would benefit from his expertise and collaborative approach.",
+      "creationDate": "02/19/25, 03:20 PM"
+    },
+    {
+      "firstName": "Dhieo",
+      "lastName": "Deva Alavanta",
+      "company": "Telkom Indonesia",
+      "jobTitle": "Frontend Developer",
+      "text": "I had the opportunity to collaborate with Renaldy and was always impressed by his skills as a frontend developer. He has a deep understanding of frontend frameworks, particularly React and Angular, and knows how to leverage them effectively to build scalable and maintainable applications. Beyond his technical expertise, Renaldy is a dedicated professional with a strong work ethic. He consistently delivers high-quality work and approaches challenges with a problem-solving mindset. His combination of technical proficiency and commitment makes him a valuable asset to any team. Anyone looking for a skilled and dependable frontend developer would be fortunate to have him on their team",
+      "creationDate": "02/19/25, 02:37 PM"
+    },
+    {
+      "firstName": "Rizki",
+      "lastName": "Sya'ban Aryanto",
+      "company": "Telkom Indonesia",
+      "jobTitle": "Back End Developer",
+      "text": "I am delighted to have had the opportunity to work with Renaldy. He possesses exceptional frontend development skills and demonstrates remarkable proficiency in various frontend technologies, like Angular, React, etc. What truly distinguishes Renaldy is not only his technical prowess but also his genuine interest in backend development, coupled with an infectious enthusiasm for learning and generously sharing knowledge with colleagues. His strong communication skills and collaborative nature make him an invaluable team member, and I've found that working with Renaldy extends beyond professional boundaries. He has become not just a colleague but a friend, making every project more enjoyable and enriching.",
+      "creationDate": "02/19/25, 01:14 PM"
+    },
+    {
+      "firstName": "Handy Reypiyandika",
+      "lastName": "Moechtar",
+      "company": "Telkom Indonesia",
+      "jobTitle": "Front-end Developer",
+      "text": "I had the pleasure of working with Renaldy as a Front-End Engineer, and their expertise in web development is truly impressive. He consistently deliver high-quality, user-friendly interfaces while staying on top of the latest technologies and best practices. Renaldy is a problem-solver who approaches challenges with creativity and precision, and their attention to detail ensures that every project is executed seamlessly. A true team player, he brings valuable insights to discussions and always work collaboratively to drive projects forward.",
+      "creationDate": "02/19/25, 11:14 AM"
+    }
+  ]
+}
