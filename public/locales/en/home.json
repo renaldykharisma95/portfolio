@@ -2,5 +2,8 @@
   "name": "Muhammad Renaldy Kharisma",
   "title": "Front-end Web Developer",
   "description": "Front-End Developer with 5+ years of experience building high-performance, responsive web apps using Next.js, React, and Angular. Skilled in reusable components, API integration, and UI/UX best practices, with a strong focus on aligning technical solutions with business goals.",
-  "imageAlt": "coding"
+  "imageAlt": "coding",
+  "availForWork": "Available for work",
+  "viewMyWork": "View My Work",
+  "downloadCV": "Download CV"
 }
