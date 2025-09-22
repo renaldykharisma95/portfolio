@@ -1,18 +1,38 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Coding from "../../assets/coding.webp";
+import myPDF from "../../assets/CVRenaldyKharisma.pdf";
 
 const Home = () => {
   const { t } = useTranslation("home");
 
   const scrollToProjects = () => {
-    const projectsSection = document.getElementById('projects');
+    const projectsSection = document.getElementById("projects");
     if (projectsSection) {
       projectsSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: "smooth",
+        block: "start",
       });
     }
+  };
+
+  const scrollToTestimonies = () => {
+    const testimoniesSection =
+      document.getElementById("testimonies") ||
+      document.getElementById("about");
+    if (testimoniesSection) {
+      testimoniesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = myPDF;
+    link.download = "CVRenaldyKharisma.pdf";
+    link.click();
   };
 
   return (
@@ -57,7 +77,7 @@ const Home = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 sm:mt-6 justify-center md:justify-start lg:justify-start px-2 sm:px-0">
-              <button 
+              <button
                 onClick={scrollToProjects}
                 className="group relative px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden text-sm sm:text-base"
               >
@@ -80,7 +100,10 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
 
-              <button className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 flex items-center gap-2 justify-center text-sm sm:text-base">
+              <button
+                onClick={handleDownload}
+                className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 flex items-center gap-2 justify-center text-sm sm:text-base"
+              >
                 <svg
                   className="w-4 h-4 sm:w-5 sm:h-5"
                   fill="none"
@@ -140,7 +163,10 @@ const Home = () => {
         </div>
 
         {/* Scroll indicator - Hidden on small screens */}
-        <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">
+        <div
+          onClick={scrollToTestimonies}
+          className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block cursor-pointer"
+        >
           <div className="flex flex-col items-center gap-2 text-gray-400">
             <span className="text-sm font-medium">Scroll Down</span>
             <svg
