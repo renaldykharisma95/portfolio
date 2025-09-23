@@ -1,130 +1,129 @@
 {
-  "title": "About Me",
-  "workExperienceTitle": "Work Experiences",
-  "description": "I am a Front-End Web Developer from Bandung, Indonesia. I have over five years of experience building web applications with JavaScript frameworks like Next.js, React.js, and Angular. I enjoy creating fast, responsive, and user-friendly websites, and working with teams to deliver great results.",
-  "sections": {
-    "programmingLanguages": "Programming Languages",
-    "frameworks": "Frameworks",
-    "tools": "Tools"
-  },
-  "workExperience": [
-    {
-      "title": "April 2025 - Oktober 2025",
-      "cardTitle": "Padepokan 79",
-      "cardSubtitle": "Front-end Web Developer at PT NTT Data Indonesia",
-      "responsibilities": "Responsibilities:",
-      "tasks": [
-        "Build website application called 'Versacore' with Next JS version 15 framework",
-        "Build client-side system and API integration",
-        "Create reusable react components, custom hooks and functions",
-        "Increase website performance",
-        "Coordinate with PT NTT Data Indonesia team for project requirements",
-        "Repository maintainer"
-      ]
+    "title": "About Me",
+    "workExperienceTitle": "Work Experiences",
+    "description": "I am a Front-End Web Developer from Bandung, Indonesia. I have over five years of experience building web applications with JavaScript frameworks like Next.js, React.js, and Angular. I enjoy creating fast, responsive, and user-friendly websites, and working with teams to deliver great results.",
+    "sections": {
+        "programmingLanguages": "Programming Languages",
+        "frameworks": "Frameworks",
+        "tools": "Tools"
     },
-    {
-      "title": "October 2021 - April 2025",
-      "cardTitle": "PT Telekomunikasi Indonesia",
-      "cardSubtitle": "Front-end Web Developer",
-      "responsibilities": "Responsibilities:",
-      "tasks": [
-        "Build website application with Next JS framework",
-        "Build client-side system and API integration",
-        "Create reusable react components, custom hooks and functions",
-        "Increase website performance",
-        "Unit testing for checking quality of code",
-        "Collaborate with marketing team for SEO optimization",
-        "Repository maintainer"
-      ]
-    },
-    {
-      "title": "October 2019 - October 2021",
-      "cardTitle": "PT Radya Anugerah Digital",
-      "cardSubtitle": "Front-end Web Developer",
-      "responsibilities": "Responsibilities:",
-      "tasks": [
-        "Build website with Angular 7 framework",
-        "Build website client-side system and API integration",
-        "Collaborate with teams to deliver client's requirements"
-      ]
-    },
-    {
-      "title": "June 2017 - Oct 2017",
-      "cardTitle": "PT Telekomunikasi Indonesia",
-      "cardSubtitle": "Cloud and Node Internship",
-      "responsibilities": "Responsibilities:",
-      "tasks": [
-        "Researching OpenStack platform",
-        "Installing software to server for staff needs",
-        "Helping with staff's daily tasks"
-      ]
+    "workExperience": [
+        {
+            "title": "April 2025 - Oktober 2025",
+            "cardTitle": "Padepokan 79",
+            "cardSubtitle": "Front-end Web Developer at PT NTT Data Indonesia",
+            "responsibilities": "Responsibilities:",
+            "tasks": [
+                "Build website application called 'Versacore' with Next JS version 15 framework",
+                "Build client-side system and API integration",
+                "Create reusable react components, custom hooks and functions",
+                "Increase website performance",
+                "Coordinate with PT NTT Data Indonesia team for project requirements"
+            ]
+        },
+        {
+            "title": "October 2021 - April 2025",
+            "cardTitle": "PT Telekomunikasi Indonesia",
+            "cardSubtitle": "Front-end Web Developer",
+            "responsibilities": "Responsibilities:",
+            "tasks": [
+                "Build website application with Next JS framework",
+                "Build client-side system and API integration",
+                "Create reusable react components, custom hooks and functions",
+                "Increase website performance",
+                "Unit testing for checking quality of code",
+                "Collaborate with marketing team for SEO optimization",
+                "Repository maintainer"
+            ]
+        },
+        {
+            "title": "October 2019 - October 2021",
+            "cardTitle": "PT Radya Anugerah Digital",
+            "cardSubtitle": "Front-end Web Developer",
+            "responsibilities": "Responsibilities:",
+            "tasks": [
+                "Build website with Angular 7 framework",
+                "Build website client-side system and API integration",
+                "Collaborate with teams to deliver client's requirements"
+            ]
+        },
+        {
+            "title": "June 2017 - Oct 2017",
+            "cardTitle": "PT Telekomunikasi Indonesia",
+            "cardSubtitle": "Cloud and Node Internship",
+            "responsibilities": "Responsibilities:",
+            "tasks": [
+                "Researching OpenStack platform",
+                "Installing software to server for staff needs",
+                "Helping with staff's daily tasks"
+            ]
+        }
+    ],
+    "skills": {
+        "programmingLanguages": [
+            {
+                "name": "TypeScript",
+                "progress": 10,
+                "color": "#3178c6"
+            },
+            {
+                "name": "JavaScript",
+                "progress": 10,
+                "color": "#f7df1e"
+            },
+            {
+                "name": "Python",
+                "progress": 5,
+                "color": "#3776AB"
+            }
+        ],
+        "frameworks": [
+            {
+                "name": "Next.js",
+                "progress": 10,
+                "color": "#000000"
+            },
+            {
+                "name": "React.js",
+                "progress": 10,
+                "color": "#61dafb"
+            },
+            {
+                "name": "Angular",
+                "progress": 6,
+                "color": "#dd0031"
+            },
+            {
+                "name": "Express.js",
+                "progress": 4,
+                "color": "#303030"
+            }
+        ],
+        "tools": [
+            {
+                "label": "Frameworks UI",
+                "name": "Chakra UI, Tailwind, Hero UI, Bootstrap, Material UI, Ant Design"
+            },
+            {
+                "label": "Data fetching",
+                "name": "Tanstack React-query, RTK query, Axios"
+            },
+            {
+                "label": "Form Management",
+                "name": "Formik, yup, React hooks form"
+            },
+            {
+                "label": "State Management",
+                "name": "Redux, zustand"
+            },
+            {
+                "label": "Versioning Control",
+                "name": "Git"
+            },
+            {
+                "label": "Unit Test",
+                "name": "Jest"
+            }
+        ]
     }
-  ],
-  "skills": {
-    "programmingLanguages": [
-      {
-        "name": "TypeScript",
-        "progress": 9,
-        "color": "#3178c6"
-      },
-      {
-        "name": "JavaScript",
-        "progress": 9,
-        "color": "#f7df1e"
-      },
-      {
-        "name": "PHP",
-        "progress": 6,
-        "color": "#8892be"
-      }
-    ],
-    "frameworks": [
-      {
-        "name": "Next.js",
-        "progress": 9,
-        "color": "#000000"
-      },
-      {
-        "name": "React.js",
-        "progress": 9,
-        "color": "#61dafb"
-      },
-      {
-        "name": "Angular",
-        "progress": 6,
-        "color": "#dd0031"
-      },
-      {
-        "name": "Express.js",
-        "progress": 7,
-        "color": "#303030"
-      }
-    ],
-    "tools": [
-      {
-        "label": "Frameworks UI",
-        "name": "Chakra UI, Tailwind, Hero UI, Bootstrap, Material UI, Ant Design"
-      },
-      {
-        "label": "Data fetching",
-        "name": "Tanstack React-query, RTK query, Axios"
-      },
-      {
-        "label": "Form Management",
-        "name": "Formik, yup, React hooks form"
-      },
-      {
-        "label": "State Management",
-        "name": "Redux, zustand"
-      },
-      {
-        "label": "Versioning Control",
-        "name": "Git"
-      },
-      {
-        "label": "Unit Test",
-        "name": "Jest"
-      }
-    ]
-  }
 }

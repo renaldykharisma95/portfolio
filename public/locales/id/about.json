@@ -1,130 +1,129 @@
 {
-  "title": "Tentang Saya",
-  "workExperienceTitle": "Pengalaman Kerja",
-  "description": "Saya adalah Pengembang Web Front-End dari Bandung, Indonesia. Saya memiliki pengalaman lebih dari lima tahun dalam membangun aplikasi web dengan framework JavaScript seperti Next.js, React.js, dan Angular. Saya senang membuat website yang cepat, responsif, dan ramah pengguna, serta bekerja dengan tim untuk memberikan hasil yang luar biasa.",
-  "sections": {
-    "programmingLanguages": "Bahasa Pemrograman",
-    "frameworks": "Framework",
-    "tools": "Alat"
-  },
-  "workExperience": [
-    {
-      "title": "April 2025 - Oktober 2025",
-      "cardTitle": "Padepokan 79",
-      "cardSubtitle": "Pengembang Web Front-end di PT NTT Data Indonesia",
-      "responsibilities": "Tanggung Jawab:",
-      "tasks": [
-        "Membangun aplikasi website bernama 'Versacore' dengan framework Next JS versi 15",
-        "Membangun sistem client-side dan integrasi API",
-        "Membuat komponen React yang dapat digunakan kembali, custom hooks dan fungsi",
-        "Meningkatkan performa website",
-        "Berkoordinasi dengan tim PT NTT Data Indonesia untuk kebutuhan proyek",
-        "Maintainer repository"
-      ]
+    "title": "Tentang Saya",
+    "workExperienceTitle": "Pengalaman Kerja",
+    "description": "Saya adalah Pengembang Web Front-End dari Bandung, Indonesia. Saya memiliki pengalaman lebih dari lima tahun dalam membangun aplikasi web dengan framework JavaScript seperti Next.js, React.js, dan Angular. Saya senang membuat website yang cepat, responsif, dan ramah pengguna, serta bekerja dengan tim untuk memberikan hasil yang luar biasa.",
+    "sections": {
+        "programmingLanguages": "Bahasa Pemrograman",
+        "frameworks": "Framework",
+        "tools": "Alat"
     },
-    {
-      "title": "Oktober 2021 - April 2025",
-      "cardTitle": "PT Telekomunikasi Indonesia",
-      "cardSubtitle": "Pengembang Web Front-end",
-      "responsibilities": "Tanggung Jawab:",
-      "tasks": [
-        "Membangun aplikasi website dengan framework Next JS",
-        "Membangun sistem client-side dan integrasi API",
-        "Membuat komponen React yang dapat digunakan kembali, custom hooks dan fungsi",
-        "Meningkatkan performa website",
-        "Unit testing untuk mengecek kualitas kode",
-        "Berkolaborasi dengan tim marketing untuk optimasi SEO",
-        "Maintainer repository"
-      ]
-    },
-    {
-      "title": "Oktober 2019 - Oktober 2021",
-      "cardTitle": "PT Radya Anugerah Digital",
-      "cardSubtitle": "Pengembang Web Front-end",
-      "responsibilities": "Tanggung Jawab:",
-      "tasks": [
-        "Membangun website dengan framework Angular 7",
-        "Membangun sistem client-side website dan integrasi API",
-        "Berkolaborasi dengan tim untuk memenuhi kebutuhan klien"
-      ]
-    },
-    {
-      "title": "Juni 2017 - Oktober 2017",
-      "cardTitle": "PT Telekomunikasi Indonesia",
-      "cardSubtitle": "Magang Cloud dan Node",
-      "responsibilities": "Tanggung Jawab:",
-      "tasks": [
-        "Meneliti platform OpenStack",
-        "Menginstal software ke server untuk kebutuhan staff",
-        "Membantu tugas harian staff"
-      ]
+    "workExperience": [
+        {
+            "title": "April 2025 - Oktober 2025",
+            "cardTitle": "Padepokan 79",
+            "cardSubtitle": "Pengembang Web Front-end di PT NTT Data Indonesia",
+            "responsibilities": "Tanggung Jawab:",
+            "tasks": [
+                "Membangun aplikasi website bernama 'Versacore' dengan framework Next JS versi 15",
+                "Membangun sistem client-side dan integrasi API",
+                "Membuat komponen React yang dapat digunakan kembali, custom hooks dan fungsi",
+                "Meningkatkan performa website",
+                "Berkoordinasi dengan tim PT NTT Data Indonesia untuk kebutuhan proyek"
+            ]
+        },
+        {
+            "title": "Oktober 2021 - April 2025",
+            "cardTitle": "PT Telekomunikasi Indonesia",
+            "cardSubtitle": "Pengembang Web Front-end",
+            "responsibilities": "Tanggung Jawab:",
+            "tasks": [
+                "Membangun aplikasi website dengan framework Next JS",
+                "Membangun sistem client-side dan integrasi API",
+                "Membuat komponen React yang dapat digunakan kembali, custom hooks dan fungsi",
+                "Meningkatkan performa website",
+                "Unit testing untuk mengecek kualitas kode",
+                "Berkolaborasi dengan tim marketing untuk optimasi SEO",
+                "Maintainer repository"
+            ]
+        },
+        {
+            "title": "Oktober 2019 - Oktober 2021",
+            "cardTitle": "PT Radya Anugerah Digital",
+            "cardSubtitle": "Pengembang Web Front-end",
+            "responsibilities": "Tanggung Jawab:",
+            "tasks": [
+                "Membangun website dengan framework Angular 7",
+                "Membangun sistem client-side website dan integrasi API",
+                "Berkolaborasi dengan tim untuk memenuhi kebutuhan klien"
+            ]
+        },
+        {
+            "title": "Juni 2017 - Oktober 2017",
+            "cardTitle": "PT Telekomunikasi Indonesia",
+            "cardSubtitle": "Magang Cloud dan Node",
+            "responsibilities": "Tanggung Jawab:",
+            "tasks": [
+                "Meneliti platform OpenStack",
+                "Menginstal software ke server untuk kebutuhan staff",
+                "Membantu tugas harian staff"
+            ]
+        }
+    ],
+    "skills": {
+        "programmingLanguages": [
+            {
+                "name": "TypeScript",
+                "progress": 9,
+                "color": "#3178c6"
+            },
+            {
+                "name": "JavaScript",
+                "progress": 9,
+                "color": "#f7df1e"
+            },
+            {
+                "name": "Python",
+                "progress": 5,
+                "color": "#3776AB"
+            }
+        ],
+        "frameworks": [
+            {
+                "name": "Next.js",
+                "progress": 10,
+                "color": "#000000"
+            },
+            {
+                "name": "React.js",
+                "progress": 10,
+                "color": "#61dafb"
+            },
+            {
+                "name": "Angular",
+                "progress": 6,
+                "color": "#dd0031"
+            },
+            {
+                "name": "Express.js",
+                "progress": 4,
+                "color": "#303030"
+            }
+        ],
+        "tools": [
+            {
+                "label": "Framework UI",
+                "name": "Chakra UI, Tailwind, Hero UI, Bootstrap, Material UI, Ant Design"
+            },
+            {
+                "label": "Pengambilan Data",
+                "name": "Tanstack React-query, RTK query, Axios"
+            },
+            {
+                "label": "Manajemen Form",
+                "name": "Formik, yup, React hooks form"
+            },
+            {
+                "label": "Manajemen State",
+                "name": "Redux, zustand"
+            },
+            {
+                "label": "Kontrol Versi",
+                "name": "Git"
+            },
+            {
+                "label": "Unit Test",
+                "name": "Jest"
+            }
+        ]
     }
-  ],
-  "skills": {
-    "programmingLanguages": [
-      {
-        "name": "TypeScript",
-        "progress": 9,
-        "color": "#3178c6"
-      },
-      {
-        "name": "JavaScript",
-        "progress": 9,
-        "color": "#f7df1e"
-      },
-      {
-        "name": "PHP",
-        "progress": 6,
-        "color": "#8892be"
-      }
-    ],
-    "frameworks": [
-      {
-        "name": "Next.js",
-        "progress": 9,
-        "color": "#000000"
-      },
-      {
-        "name": "React.js",
-        "progress": 9,
-        "color": "#61dafb"
-      },
-      {
-        "name": "Angular",
-        "progress": 6,
-        "color": "#dd0031"
-      },
-      {
-        "name": "Express.js",
-        "progress": 7,
-        "color": "#303030"
-      }
-    ],
-    "tools": [
-      {
-        "label": "Framework UI",
-        "name": "Chakra UI, Tailwind, Hero UI, Bootstrap, Material UI, Ant Design"
-      },
-      {
-        "label": "Pengambilan Data",
-        "name": "Tanstack React-query, RTK query, Axios"
-      },
-      {
-        "label": "Manajemen Form",
-        "name": "Formik, yup, React hooks form"
-      },
-      {
-        "label": "Manajemen State",
-        "name": "Redux, zustand"
-      },
-      {
-        "label": "Kontrol Versi",
-        "name": "Git"
-      },
-      {
-        "label": "Unit Test",
-        "name": "Jest"
-      }
-    ]
-  }
 }
