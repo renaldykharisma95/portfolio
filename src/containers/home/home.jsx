@@ -166,7 +166,7 @@ const Home = () => {
         </div>
 
         {/* Scroll indicator - More robust centering */}
-        <div className="absolute bottom-6 sm:bottom-8 md:bottom-10 lg:bottom-12 w-full flex justify-center animate-bounce hidden sm:flex">
+        <div className="absolute bottom-6 sm:bottom-8 md:bottom-10 lg:bottom-12 w-full flex justify-center animate-bounce sm:flex">
           <button
             onClick={scrollToTestimonies}
             className="flex flex-col items-center gap-1 sm:gap-2 text-gray-400 hover:text-gray-600 transition-colors duration-300 cursor-pointer group"

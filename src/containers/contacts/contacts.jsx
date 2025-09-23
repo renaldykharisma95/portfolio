@@ -29,7 +29,7 @@ const Contacts = () => {
             </div>
             <div className="flex-1">
               <h3 className="font-semibold text-gray-800">LinkedIn</h3>
-              <p className="text-blue-600 font-medium">Muhammad Renaldy Kharisma</p>
+              <p className="text-blue-600 font-medium text-sm">Muhammad Renaldy Kharisma</p>
             </div>
             <div className="text-blue-600 group-hover:translate-x-1 transition-transform duration-300">
               →
@@ -47,7 +47,7 @@ const Contacts = () => {
             </div>
             <div className="flex-1">
               <h3 className="font-semibold text-gray-800">WhatsApp</h3>
-              <p className="text-green-600 font-medium">+62 87823418514</p>
+              <p className="text-green-600 font-medium text-sm">+62 87823418514</p>
             </div>
             <div className="text-green-600 group-hover:translate-x-1 transition-transform duration-300">
               →
@@ -59,11 +59,11 @@ const Contacts = () => {
             className="flex items-center gap-4 p-4 rounded-xl bg-red-50 hover:bg-red-100 transition-colors duration-300 group"
           >
             <div className="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <img src={emailIcon} alt="Email" className="w-7 h-7" />
+             <img src={emailIcon} alt="Email" className="w-7 h-7" />
             </div>
             <div className="flex-1">
               <h3 className="font-semibold text-gray-800">Email</h3>
-              <p className="text-red-600 font-medium">renaldykhrsm8@gmail.com</p>
+              <p className="text-red-600 font-medium text-sm">renaldykhrsm8@gmail.com</p>
             </div>
             <div className="text-red-600 group-hover:translate-x-1 transition-transform duration-300">
               →
