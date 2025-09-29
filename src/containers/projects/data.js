@@ -69,8 +69,8 @@ export const datas = [
     title: "Versacore",
     image: versacore,
     description: {
-      en: "VersaCore (https://webapp.dev.versacore.cloud/id) is a robust ERP (Enterprise Resource Planning) application designed specifically for the finance industry. It integrates and automates financial operations, providing real-time insights into cash flow, budgets, and profitability. VersaCore helps organizations streamline processes, ensure regulatory compliance, and support growth with scalable tools for managing complex financial tasks.",
-      id: "VersaCore (https://webapp.dev.versacore.cloud/id) adalah aplikasi ERP (Enterprise Resource Planning) yang robust dan dirancang khusus untuk industri keuangan. Aplikasi ini mengintegrasikan dan mengotomatisasi operasi keuangan, memberikan wawasan real-time tentang arus kas, anggaran, dan profitabilitas. VersaCore membantu organisasi menyederhanakan proses, memastikan kepatuhan regulasi, dan mendukung pertumbuhan dengan alat yang dapat diskalakan untuk mengelola tugas-tugas keuangan yang kompleks."
+      en: "VersaCore is a robust ERP (Enterprise Resource Planning) application designed specifically for the finance industry. It integrates and automates financial operations, providing real-time insights into cash flow, budgets, and profitability. VersaCore helps organizations streamline processes, ensure regulatory compliance, and support growth with scalable tools for managing complex financial tasks.",
+      id: "VersaCore adalah aplikasi ERP (Enterprise Resource Planning) yang robust dan dirancang khusus untuk industri keuangan. Aplikasi ini mengintegrasikan dan mengotomatisasi operasi keuangan, memberikan wawasan real-time tentang arus kas, anggaran, dan profitabilitas. VersaCore membantu organisasi menyederhanakan proses, memastikan kepatuhan regulasi, dan mendukung pertumbuhan dengan alat yang dapat diskalakan untuk mengelola tugas-tugas keuangan yang kompleks."
     },
     frontendStack: [
       "Next 15",

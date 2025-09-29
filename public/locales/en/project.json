@@ -14,6 +14,9 @@
     },
     {
       "description": "SIMLITBINUS (https://simlitbinus.apps.binus.ac.id/) is an internal research information system owned by Bina Nusantara University (BINUS) designed to manage the entire research activity cycle digitally. This platform facilitates the process of proposal submission, evaluation, funding, to reporting research results for lecturers and researchers in the BINUS environment. With integration to various supporting applications such as e-PDP, Scopus Apps, and IPR systems, SIMLITBINUS supports transparency, efficiency, and accountability in the implementation of internal research. This platform is also connected to the BINUS Research and Technology Transfer Office (RTTO), which manages various grant schemes such as BINUS Basic-Applied Research (PTB), BINUS International Research (PIB), and Binus Environmental Care (BPL), as well as providing guidance and administrative support for researchers."
+    },
+    {
+      "description": "VersaCore is a robust ERP (Enterprise Resource Planning) application designed specifically for the finance industry. It integrates and automates financial operations, providing real-time insights into cash flow, budgets, and profitability. VersaCore helps organizations streamline processes, ensure regulatory compliance, and support growth with scalable tools for managing complex financial tasks."
     }
   ]
 }
