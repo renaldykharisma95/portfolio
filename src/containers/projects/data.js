@@ -2,7 +2,7 @@ import indibiz from "../../assets/indibiz.webp";
 import mytens from "../../assets/mytens.webp";
 import onedata from "../../assets/onedata.webp";
 import risbus from "../../assets/risbus.webp";
-import versacore from "../../assets/versacore.png";
+// import versacore from "../../assets/versacore.png";
 
 export const datas = [
   {
