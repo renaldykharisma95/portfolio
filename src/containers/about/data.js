@@ -82,7 +82,7 @@ export const frameworks = [
   {
     name: "Next.js",
     progress: 9,
-    color: "#000000",
+    color: "#1C1917",
   },
   {
     name: "React.js",

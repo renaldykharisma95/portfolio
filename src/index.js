@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ThemeProvider } from "./context/ThemeContext";
 import "./i18n";
 
 import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
@@ -24,15 +25,17 @@ const LanguageWrapper = () => {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      {/* Redirect root to /en by default */}
-      <Route path="/" element={<Navigate to="/en" replace />} />
+  <ThemeProvider>
+    <BrowserRouter>
+      <Routes>
+        {/* Redirect root to /en by default */}
+        <Route path="/" element={<Navigate to="/en" replace />} />
 
-      {/* Match /en or /id routes and pass to App */}
-      <Route path="/:lng/*" element={<LanguageWrapper />} />
-    </Routes>
-  </BrowserRouter>
+        {/* Match /en or /id routes and pass to App */}
+        <Route path="/:lng/*" element={<LanguageWrapper />} />
+      </Routes>
+    </BrowserRouter>
+  </ThemeProvider>
 );
 
 reportWebVitals();

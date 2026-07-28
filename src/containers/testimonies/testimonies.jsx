@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-
 import Card from "../../components/Card/Card";
 import userIcon from "../../assets/user.webp";
 import { format } from "date-fns";
 import StandardCarousel from "../../components/standardCarousel/StandardCarousel";
 import recommendationData from "./recommendation.json";
+import { useTheme } from "../../context/ThemeContext";
 
 const Testimonies = () => {
   const { t, ready } = useTranslation("testimonies");
+  const { theme } = useTheme();
   const [expandedItems, setExpandedItems] = useState({});
 
   const toggleReadMore = (index) => {
@@ -35,14 +36,22 @@ const Testimonies = () => {
   return (
     <section
       id="testimonies"
-      className="min-h-fit bg-gray-50 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8"
+      className={`min-fit py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-300 ${
+        theme === "dark"
+          ? "bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+          : "bg-gray-50"
+      }`}
     >
       {/* Section Header */}
       <div className="max-w-7xl mx-auto text-center mb-8 sm:mb-12 lg:mb-16">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className={`text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 ${
+          theme === "dark" ? "text-white" : "text-gray-900"
+        }`}>
           {ready ? t("sectionTitle", "What People Say") : "What People Say"}
         </h2>
-        <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className={`text-sm sm:text-base lg:text-lg max-w-2xl mx-auto ${
+          theme === "dark" ? "text-gray-300" : "text-gray-600"
+        }`}>
           {ready
             ? t(
                 "sectionDescription",
@@ -117,7 +126,9 @@ const Testimonies = () => {
 
             return (
               <div key={index} className="px-3 sm:px-4">
-                <Card className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full min-h-[320px] sm:min-h-[340px] lg:min-h-[360px] flex flex-col mx-auto max-w-sm">
+                <Card className={`min-h-[320px] sm:min-h-[340px] lg:min-h-[360px] flex flex-col mx-auto max-w-sm border ${
+                  theme === "dark" ? "border-gray-700" : "border-gray-100"
+                }`}>
                   {/* Card Content */}
                   <div className="p-4 sm:p-5 lg:p-6 flex flex-col h-full">
                     {/* Header Section */}
@@ -135,13 +146,19 @@ const Testimonies = () => {
 
                       {/* User Info */}
                       <div className="min-w-0 flex-1">
-                        <h3 className="font-bold text-sm sm:text-base lg:text-lg text-gray-900 line-clamp-1">
+                        <h3 className={`font-bold text-sm sm:text-base lg:text-lg line-clamp-1 ${
+                          theme === "dark" ? "text-white" : "text-gray-900"
+                        }`}>
                           {firstName} {lastName}
                         </h3>
-                        <p className="text-xs sm:text-sm text-blue-600 font-medium line-clamp-1 mt-1">
+                        <p className={`text-xs sm:text-sm font-medium line-clamp-1 mt-1 ${
+                          theme === "dark" ? "text-blue-400" : "text-blue-600"
+                        }`}>
                           {jobTitle}
                         </p>
-                        <p className="text-xs sm:text-sm text-gray-500 line-clamp-1">
+                        <p className={`text-xs sm:text-sm line-clamp-1 ${
+                          theme === "dark" ? "text-gray-400" : "text-gray-500"
+                        }`}>
                           {company}
                         </p>
                       </div>
@@ -155,12 +172,16 @@ const Testimonies = () => {
                           "
                         </div>
 
-                        <blockquote className="text-xs sm:text-sm lg:text-base text-gray-700 leading-relaxed pl-4 italic">
+                        <blockquote className={`text-xs sm:text-sm lg:text-base leading-relaxed pl-4 italic ${
+                          theme === "dark" ? "text-gray-300" : "text-gray-700"
+                        }`}>
                           {displayText}
                           {shouldTruncate && !isExpanded && "..."}
                           {shouldTruncate && (
                             <button
-                              className="text-blue-600 hover:text-blue-800 ml-1 font-medium underline transition-colors"
+                              className={`ml-1 font-medium underline transition-colors ${
+                                theme === "dark" ? "text-blue-400 hover:text-blue-300" : "text-blue-600 hover:text-blue-800"
+                              }`}
                               onClick={() => toggleReadMore(index)}
                             >
                               {isExpanded
@@ -168,8 +189,8 @@ const Testimonies = () => {
                                   ? t("ui.readLess")
                                   : "read less"
                                 : ready
-                                ? t("ui.readMore")
-                                : "read more"}
+                                  ? t("ui.readMore")
+                                  : "read more"}
                             </button>
                           )}
                         </blockquote>
@@ -182,7 +203,9 @@ const Testimonies = () => {
                     </div>
 
                     {/* Footer */}
-                    <div className="mt-4 pt-4 border-t border-gray-100">
+                    <div className={`mt-4 pt-4 border-t ${
+                      theme === "dark" ? "border-gray-700" : "border-gray-100"
+                    }`}>
                       <p className="text-xs text-gray-400 text-right">
                         {format(new Date(creationDate), "MMMM d, yyyy")}
                       </p>
@@ -207,7 +230,11 @@ const Testimonies = () => {
           opacity: 0.5 !important;
         }
 
-        .slick-dots li.slick-active button:before {
+        .custom-dots li.slick-active div {
+          border-color: #3b82f6 !important;
+        }
+
+        .custom-dots li.slick-active button:before {
           opacity: 1 !important;
           color: #1d4ed8 !important;
         }
@@ -222,12 +249,6 @@ const Testimonies = () => {
 
         .slick-next {
           right: -25px !important;
-        }
-
-        .slick-prev:before,
-        .slick-next:before {
-          color: #3b82f6 !important;
-          font-size: 20px !important;
         }
 
         @media (max-width: 768px) {

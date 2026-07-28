@@ -7,6 +7,8 @@
       "projects": "Proyek",
       "contacts": "Kontak"
     },
-    "toggleMenu": "Buka menu"
+    "toggleMenu": "Buka menu",
+    "switchToDarkMode": "Aktifkan mode gelap",
+    "switchToLightMode": "Aktifkan mode terang"
   }
 }

@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure smooth color transitions for dark mode */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+}
 
 ol, ul, menu {
     list-style: inside;
@@ -41,4 +49,17 @@ ol, ul, menu {
   display: flex !important;
   justify-content: center;
   align-items: center;
+}
+
+/* Default slick arrow coloring (light mode) */
+.slick-prev:before,
+.slick-next:before {
+  color: #3b82f6 !important;
+  font-size: 20px !important;
+}
+
+/* Slick arrows should be visible in dark mode too */
+.dark .slick-prev:before,
+.dark .slick-next:before {
+  color: #60a5fa !important;
 }

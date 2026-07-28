@@ -10,7 +10,7 @@ import React from "react";
 const Card = ({ children, className = "", style = {} }) => {
   return (
     <div
-      className={`bg-white rounded-lg shadow-md p-6 ${className}`}
+      className={`bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 ${className}`}
       style={style}
     >
       {children}
