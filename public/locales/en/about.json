@@ -9,53 +9,51 @@
     },
     "workExperience": [
         {
-            "title": "April 2025 - Oktober 2025",
-            "cardTitle": "Padepokan 79",
-            "cardSubtitle": "Senior Front-end Web Developer at PT NTT Data Indonesia",
-            "responsibilities": "Responsibilities:",
+            "title": "Apr 2025 - Oct 2026",
+            "cardTitle": "PT Padepokan Tujuh Sembilan",
+            "cardSubtitle": "Front-End Developer · Onsite at PT NTT Data Indonesia · Contract",
+            "responsibilities": "Responsibilities",
             "tasks": [
-                "Build website application called 'Versacore' with Next JS version 15 framework",
-                "Build client-side system and API integration",
-                "Create reusable react components, custom hooks and functions",
-                "Increase website performance",
-                "Coordinate with PT NTT Data Indonesia team for project requirements"
+                "Responsible for the design, development, and maintenance of web applications, ensuring every feature aligns with the business's functional goals",
+                "Leveraged AI-powered development tools (Claude CLI) to accelerate and optimize development efficiency",
+                "Managed repositories, version control, branching, and code reviews",
+                "Coordinated with cross-functional teams on business requirements and translated them into functional product features",
+                "Led periodic product evaluations based on end-user feedback to improve user satisfaction and system workflow efficiency"
             ]
         },
         {
-            "title": "October 2021 - April 2025",
+            "title": "Oct 2021 - Apr 2025",
             "cardTitle": "PT Telekomunikasi Indonesia",
-            "cardSubtitle": "Front-end Web Developer",
-            "responsibilities": "Responsibilities:",
+            "cardSubtitle": "Front-End Developer · Contract",
+            "responsibilities": "Responsibilities",
             "tasks": [
-                "Build website application with Next JS framework",
-                "Build client-side system and API integration",
-                "Create reusable react components, custom hooks and functions",
-                "Increase website performance",
-                "Unit testing for checking quality of code",
-                "Collaborate with marketing team for SEO optimization",
-                "Repository maintainer"
+                "Responsible for the design, development, and maintenance of web products, ensuring every feature aligns with the business's functional goals",
+                "Developed client-side systems that translate UX designs into interactive interfaces, API integration and data management",
+                "Coordinated and collaborated with various cross-divisional teams, including product owners, DevOps, designers, QA, and digital marketing, in feature planning",
+                "Coordinated quality assurance (QA testing) and product documentation to ensure all features meet functional standards before delivery to end users"
             ]
         },
         {
-            "title": "October 2019 - October 2021",
+            "title": "Oct 2019 - Oct 2021",
             "cardTitle": "PT Radya Anugerah Digital",
-            "cardSubtitle": "Front-end Web Developer",
-            "responsibilities": "Responsibilities:",
+            "cardSubtitle": "Front-End Developer · Contract",
+            "responsibilities": "Responsibilities",
             "tasks": [
-                "Build website with Angular 7 framework",
-                "Build website client-side system and API integration",
-                "Collaborate with teams to deliver client's requirements"
+                "Responsible for the design, development, and maintenance of web products, ensuring every feature aligns with the business's functional goals",
+                "Translated UI designs into interactive and functional website features, performing API integration and data management",
+                "Coordinated and collaborated with clients in project planning and execution",
+                "Analyzed business requirements and translated them into functional product features"
             ]
         },
         {
-            "title": "June 2017 - Oct 2017",
+            "title": "Jun 2017 - Oct 2017",
             "cardTitle": "PT Telekomunikasi Indonesia",
-            "cardSubtitle": "Cloud and Node Internship",
-            "responsibilities": "Responsibilities:",
+            "cardSubtitle": "Cloud & Infrastructure · Intern",
+            "responsibilities": "Responsibilities",
             "tasks": [
-                "Researching OpenStack platform",
-                "Installing software to server for staff needs",
-                "Helping with staff's daily tasks"
+                "Researched the OpenStack cloud platform for enterprise infrastructure provisioning",
+                "Installed and configured server software to support internal staff requirements",
+                "Supported administrative tasks for internal staff"
             ]
         }
     ],

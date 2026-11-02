@@ -1,8 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 import { useTheme } from "../../context/ThemeContext";
 import Coding from "../../assets/coding.webp";
-import myPDF from "../../assets/CVRenaldyKharisma.pdf";
+import CVID from "../../assets/renaldykharisma-ats-indo.pdf";
+import CVEN from "../../assets/renaldykharisma-ats-en.pdf";
 
 const Home = () => {
   const { t } = useTranslation("home");
@@ -31,9 +33,12 @@ const Home = () => {
   };
 
   const handleDownload = () => {
+    const pdf = i18n.language === "id" ? CVID : CVEN;
+    const filename = i18n.language === "id" ? "CV_Renaldy_Kharisma_id.pdf" : "CV_Renaldy_Kharisma_en.pdf";
+
     const link = document.createElement("a");
-    link.href = myPDF;
-    link.download = "CVRenaldyKharisma.pdf";
+    link.href = pdf;
+    link.download = filename;
     link.click();
   };
 
@@ -43,26 +48,26 @@ const Home = () => {
         id="home"
         className={`min-h-screen flex items-center justify-center px-4 py-24 sm:pt-12 sm:pb-12 md:pt-16 md:pb-16 relative overflow-hidden ${
           theme === "dark"
-            ? "bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
-            : "bg-gradient-to-br from-gray-50 via-white to-blue-50"
+            ? "bg-gradient-to-br from-green-950 via-emerald-950 to-teal-950"
+            : "bg-gradient-to-br from-emerald-50 via-white to-teal-50"
         }`}
       >
         {/* Background decoration */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className={`absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-40 h-40 sm:w-80 sm:h-80 rounded-full opacity-40 sm:opacity-60 blur-2xl sm:blur-3xl ${
             theme === "dark"
-              ? "bg-gradient-to-br from-blue-900/50 to-indigo-900/50"
-              : "bg-gradient-to-br from-blue-100 to-indigo-200"
+              ? "bg-gradient-to-br from-emerald-800/40 to-teal-800/40"
+              : "bg-gradient-to-br from-emerald-100 to-teal-200"
           }`}></div>
           <div className={`absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-40 h-40 sm:w-80 sm:h-80 rounded-full opacity-40 sm:opacity-60 blur-2xl sm:blur-3xl ${
             theme === "dark"
-              ? "bg-gradient-to-tr from-purple-900/50 to-pink-900/50"
-              : "bg-gradient-to-tr from-purple-100 to-pink-200"
+              ? "bg-gradient-to-tr from-lime-800/40 to-green-800/40"
+              : "bg-gradient-to-tr from-lime-100 to-green-200"
           }`}></div>
           <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 sm:w-96 sm:h-96 rounded-full opacity-20 sm:opacity-30 blur-2xl sm:blur-3xl ${
             theme === "dark"
-              ? "bg-gradient-to-br from-yellow-900/40 to-orange-900/40"
-              : "bg-gradient-to-br from-yellow-100 to-orange-200"
+              ? "bg-gradient-to-br from-teal-800/30 to-emerald-900/30"
+              : "bg-gradient-to-br from-teal-100 to-emerald-200"
           }`}></div>
         </div>
 
@@ -72,8 +77,8 @@ const Home = () => {
             {/* Greeting badge */}
             <div className={`inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-medium text-xs sm:text-sm ${
               theme === "dark"
-                ? "bg-gray-800 border-gray-700 text-yellow-400 shadow-sm"
-                : "bg-gradient-to-r from-blue-100 to-indigo-100 border-blue-200 text-blue-800"
+                ? "bg-green-900 border-green-700 text-lime-300 shadow-sm"
+                : "bg-gradient-to-r from-emerald-100 to-teal-100 border-emerald-200 text-emerald-800"
             }`}>
               <div className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full animate-pulse ${
                 theme === "dark" ? "bg-green-400" : "bg-green-500"
@@ -84,8 +89,8 @@ const Home = () => {
             {/* Main heading with gradient */}
             <h1 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent leading-tight px-2 sm:px-0 ${
               theme === "dark"
-                ? "bg-gradient-to-r from-white via-blue-300 to-white"
-                : "bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900"
+                ? "bg-gradient-to-r from-white via-emerald-300 to-white"
+                : "bg-gradient-to-r from-gray-900 via-emerald-700 to-gray-900"
             }`}>
               {t("name")}
             </h1>
@@ -93,9 +98,9 @@ const Home = () => {
             {/* Title with accent */}
             <div className="flex flex-col gap-2">
               <h2 className={`text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold flex items-center gap-3 justify-center md:justify-start lg:justify-start ${
-                theme === "dark" ? "text-blue-400" : "text-blue-600"
+                theme === "dark" ? "text-emerald-300" : "text-emerald-700"
               }`}>
-                <span className="w-8 sm:w-12 h-0.5 sm:h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full hidden md:block lg:block"></span>
+                <span className="w-8 sm:w-12 h-0.5 sm:h-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full hidden md:block lg:block"></span>
                 {t("title")}
               </h2>
             </div>
@@ -113,8 +118,8 @@ const Home = () => {
                 onClick={scrollToProjects}
                 className={`group relative px-6 py-3 sm:px-8 sm:py-4 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden text-sm sm:text-base ${
                   theme === "dark"
-                    ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-500 hover:to-indigo-500"
-                    : "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700"
+                    ? "bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500"
+                    : "bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-700 hover:to-teal-700"
                 }`}
               >
                 <span className="relative z-10 flex items-center gap-2 justify-center">
@@ -133,15 +138,15 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-lime-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
 
               <button
                 onClick={handleDownload}
                 className={`px-6 py-3 sm:px-8 sm:py-4 border-2 font-semibold rounded-xl transition-all duration-300 flex items-center gap-2 justify-center text-sm sm:text-base ${
                   theme === "dark"
-                    ? "border-gray-600 text-gray-200 hover:border-blue-400 hover:text-blue-300 hover:bg-gray-800"
-                    : "border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50"
+                    ? "border-green-700 text-green-100 hover:border-emerald-400 hover:text-emerald-300 hover:bg-green-900"
+                    : "border-gray-300 text-gray-700 hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50"
                 }`}
               >
                 <svg
@@ -166,13 +171,13 @@ const Home = () => {
           <div className="flex-shrink-0 order-1 md:order-2 lg:order-2 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl animate-fade-in-right">
             <div className="relative group">
               {/* Decorative elements - Adjusted positioning to prevent overflow */}
-              <div className="absolute -inset-1 sm:-inset-4 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl opacity-15 sm:opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-xl"></div>
+              <div className="absolute -inset-1 sm:-inset-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl opacity-15 sm:opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-xl"></div>
               <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-8 h-8 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full opacity-60 sm:opacity-80 animate-bounce-slow"></div>
               <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-6 h-6 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-400 to-teal-500 rounded-full opacity-60 sm:opacity-80 animate-pulse"></div>
 
               {/* Main image container - ensure full visibility */}
               <div className={`relative rounded-xl sm:rounded-2xl p-2 sm:p-3 md:p-4 shadow-xl sm:shadow-2xl group-hover:shadow-3xl transition-all duration-500 transform group-hover:scale-105 mx-2 sm:mx-0 overflow-visible ${
-                theme === "dark" ? "bg-gray-800" : "bg-white"
+                theme === "dark" ? "bg-green-900" : "bg-white"
               }`}>
                 <div className="relative w-full flex items-center justify-center rounded-lg sm:rounded-xl overflow-visible">
                   <img
@@ -184,7 +189,7 @@ const Home = () => {
                 </div>
 
                 {/* Floating elements - Adjusted positioning and sizes */}
-                <div className="absolute top-3 right-3 sm:top-6 sm:right-6 md:top-8 md:right-8 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white shadow-lg animate-float">
+                <div className="absolute top-3 right-3 sm:top-6 sm:right-6 md:top-8 md:right-8 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-emerald-500 rounded-lg flex items-center justify-center text-white shadow-lg animate-float">
                   <svg
                     className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5"
                     fill="currentColor"
@@ -212,7 +217,7 @@ const Home = () => {
           <button
             onClick={scrollToTestimonies}
             className={`flex flex-col items-center gap-1 sm:gap-2 transition-colors duration-300 cursor-pointer group ${
-              theme === "dark" ? "text-gray-500 hover:text-gray-300" : "text-gray-400 hover:text-gray-600"
+              theme === "dark" ? "text-green-500 hover:text-emerald-300" : "text-gray-400 hover:text-emerald-600"
             }`}
           >
             <span className="text-xs sm:text-sm font-medium whitespace-nowrap">Scroll Down</span>

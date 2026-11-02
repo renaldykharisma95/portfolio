@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <div className={`h-fit w-full p-4 sm:p-6 fixed top-0 border-b transition-colors duration-300 z-50 ${
       theme === "dark"
-        ? "bg-gray-900 border-gray-700"
+        ? "bg-green-950 border-green-800"
         : "bg-white border-gray-200"
     }`}>
       <div className="flex justify-between items-center flex-row">
@@ -67,8 +67,8 @@ const Navbar = () => {
             <button
               key={idx}
               onClick={() => scrollToSection(item.sectionId)}
-              className={`hover:text-blue-500 transition-colors cursor-pointer ${
-                theme === "dark" ? "text-gray-300 hover:text-white" : "text-gray-700 hover:text-blue-600"
+              className={`hover:text-emerald-600 transition-colors cursor-pointer ${
+                theme === "dark" ? "text-gray-300 hover:text-emerald-300" : "text-gray-700 hover:text-emerald-700"
               }`}
             >
               <h2 className="text-xs sm:text-sm md:text-base">{t(`navbar.menu.${item.key}`)}</h2>
@@ -80,13 +80,13 @@ const Navbar = () => {
             onClick={toggleTheme}
             className={`p-2 rounded-full transition-all duration-300 ${
               theme === "dark"
-                ? "bg-gray-700 hover:bg-gray-600 text-blue-300"
+                ? "bg-green-900 hover:bg-green-800 text-emerald-300"
                 : "bg-gray-100 hover:bg-gray-200 text-yellow-500"
             }`}
             aria-label={theme === "dark" ? t('navbar.switchToLightMode') : t('navbar.switchToDarkMode')}
           >
             {theme === "dark" ? (
-              <img src={MoonIcon} alt="moon" className="w-6 h-6 object-contain text-blue-300" />
+              <img src={MoonIcon} alt="moon" className="w-6 h-6 object-contain text-emerald-300" />
             ) : (
               <img src={SunIcon} alt="sun" className="w-6 h-6 object-contain text-yellow-500" />
             )}
@@ -94,12 +94,12 @@ const Navbar = () => {
 
           {/* Language Switcher */}
           <div className={`flex border rounded shadow ${
-            theme === "dark" ? "bg-gray-800 border-gray-700" : "bg-white border-gray-200"
+            theme === "dark" ? "bg-green-900 border-green-800" : "bg-white border-gray-200"
           }`}>
             <button
               onClick={() => changeLanguage("en")}
               className={`px-2 py-1 text-xs sm:text-sm ${
-                i18n.language === "en" ? "bg-blue-500" : (theme === "dark" ? "bg-gray-700" : "bg-gray-200")
+                i18n.language === "en" ? "bg-emerald-500" : (theme === "dark" ? "bg-green-800" : "bg-gray-200")
               }`}
             >
               <img src={englishFlag} alt="English" className="w-4 h-3 object-cover" />
@@ -107,7 +107,7 @@ const Navbar = () => {
             <button
               onClick={() => changeLanguage("id")}
               className={`px-2 py-1 text-xs sm:text-sm ${
-                i18n.language === "id" ? "bg-blue-500" : (theme === "dark" ? "bg-gray-700" : "bg-gray-200")
+                i18n.language === "id" ? "bg-emerald-500" : (theme === "dark" ? "bg-green-800" : "bg-gray-200")
               }`}
             >
               <img src={indonesiaFlag} alt="Indonesia" className="w-4 h-3 object-cover" />
@@ -121,13 +121,13 @@ const Navbar = () => {
             onClick={toggleTheme}
             className={`p-2 rounded-full transition-all duration-300 ${
               theme === "dark"
-                ? "bg-gray-700 hover:bg-gray-600 text-blue-300"
+                ? "bg-green-900 hover:bg-green-800 text-emerald-300"
                 : "bg-gray-100 hover:bg-gray-200 text-yellow-500"
             }`}
             aria-label={theme === "dark" ? t('navbar.switchToLightMode') : t('navbar.switchToDarkMode')}
           >
             {theme === "dark" ? (
-              <img src={MoonIcon} alt="moon" className="w-6 h-6 object-contain text-blue-300" />
+              <img src={MoonIcon} alt="moon" className="w-6 h-6 object-contain text-emerald-300" />
             ) : (
               <img src={SunIcon} alt="sun" className="w-6 h-6 object-contain text-yellow-500" />
             )}
@@ -161,7 +161,7 @@ const Navbar = () => {
                 onClick={() => scrollToSection(item.sectionId)}
                 className={`py-2 text-left font-medium ${
                   theme === "dark"
-                    ? "text-white bg-gray-800 hover:bg-gray-700"
+                    ? "text-green-50 bg-green-900 hover:bg-green-800"
                     : "text-gray-900 bg-white hover:bg-gray-50"
                 } transition-colors rounded-lg`}
               >

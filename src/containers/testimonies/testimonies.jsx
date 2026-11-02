@@ -38,8 +38,8 @@ const Testimonies = () => {
       id="testimonies"
       className={`min-fit py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-300 ${
         theme === "dark"
-          ? "bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
-          : "bg-gray-50"
+          ? "bg-gradient-to-br from-green-950 via-green-900 to-teal-950"
+          : "bg-emerald-50"
       }`}
     >
       {/* Section Header */}
@@ -50,7 +50,7 @@ const Testimonies = () => {
           {ready ? t("sectionTitle", "What People Say") : "What People Say"}
         </h2>
         <p className={`text-sm sm:text-base lg:text-lg max-w-2xl mx-auto ${
-          theme === "dark" ? "text-gray-300" : "text-gray-600"
+          theme === "dark" ? "text-green-100" : "text-gray-600"
         }`}>
           {ready
             ? t(
@@ -126,92 +126,112 @@ const Testimonies = () => {
 
             return (
               <div key={index} className="px-3 sm:px-4">
-                <Card className={`min-h-[320px] sm:min-h-[340px] lg:min-h-[360px] flex flex-col mx-auto max-w-sm border ${
-                  theme === "dark" ? "border-gray-700" : "border-gray-100"
-                }`}>
-                  {/* Card Content */}
-                  <div className="p-4 sm:p-5 lg:p-6 flex flex-col h-full">
-                    {/* Header Section */}
-                    <div className="flex items-start gap-3 sm:gap-4 mb-4">
-                      {/* Avatar */}
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center">
-                          <img
-                            src={userIcon}
-                            alt={ready ? t("ui.userIconAlt") : "User Icon"}
-                            className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full object-cover"
-                          />
+                <div className="testimonial-slide-stretch">
+                  <Card
+                    className={`testimonial-card min-h-[320px] sm:min-h-[340px] lg:min-h-[360px] flex flex-col p-0 border ${
+                      theme === "dark" ? "border-green-700" : "border-emerald-100"
+                    }`}
+                  >
+                    {/* Card Content */}
+                    <div className="p-4 sm:p-5 lg:p-6 flex flex-col h-full flex-1">
+                      {/* Header Section */}
+                      <div className="flex items-start gap-3 sm:gap-4 mb-4">
+                        {/* Avatar */}
+                        <div className="flex-shrink-0">
+                          <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 flex items-center justify-center">
+                            <img
+                              src={userIcon}
+                              alt={ready ? t("ui.userIconAlt") : "User Icon"}
+                              className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full object-cover"
+                            />
+                          </div>
+                        </div>
+
+                        {/* User Info */}
+                        <div className="min-w-0 flex-1">
+                          <h3
+                            className={`font-bold text-sm sm:text-base lg:text-lg line-clamp-1 ${
+                              theme === "dark" ? "text-white" : "text-gray-900"
+                            }`}
+                          >
+                            {firstName} {lastName}
+                          </h3>
+                          <p
+                            className={`text-xs sm:text-sm font-medium line-clamp-1 mt-1 ${
+                              theme === "dark" ? "text-emerald-300" : "text-emerald-700"
+                            }`}
+                          >
+                            {jobTitle}
+                          </p>
+                          <p
+                            className={`text-xs sm:text-sm line-clamp-1 ${
+                              theme === "dark" ? "text-gray-400" : "text-gray-500"
+                            }`}
+                          >
+                            {company}
+                          </p>
                         </div>
                       </div>
 
-                      {/* User Info */}
-                      <div className="min-w-0 flex-1">
-                        <h3 className={`font-bold text-sm sm:text-base lg:text-lg line-clamp-1 ${
-                          theme === "dark" ? "text-white" : "text-gray-900"
-                        }`}>
-                          {firstName} {lastName}
-                        </h3>
-                        <p className={`text-xs sm:text-sm font-medium line-clamp-1 mt-1 ${
-                          theme === "dark" ? "text-blue-400" : "text-blue-600"
-                        }`}>
-                          {jobTitle}
+                      {/* Testimonial Text */}
+                      <div className="flex-grow">
+                        <div className="relative">
+                          {/* Quote Icon */}
+                          <div className="absolute -top-2 -left-1 text-2xl sm:text-3xl text-emerald-200 font-serif">
+                            "
+                          </div>
+
+                          <blockquote
+                            className={`text-xs sm:text-sm lg:text-base leading-relaxed pl-4 italic ${
+                              theme === "dark" ? "text-green-100" : "text-gray-700"
+                            }`}
+                          >
+                            {displayText}
+                            {shouldTruncate && !isExpanded && "..."}
+                            {shouldTruncate && (
+                              <button
+                                className={`ml-1 font-medium underline transition-colors ${
+                                  theme === "dark"
+                                    ? "text-emerald-300 hover:text-emerald-200"
+                                    : "text-emerald-700 hover:text-emerald-900"
+                                }`}
+                                onClick={() => toggleReadMore(index)}
+                              >
+                                {isExpanded
+                                  ? ready
+                                    ? t("ui.readLess")
+                                    : "read less"
+                                  : ready
+                                    ? t("ui.readMore")
+                                    : "read more"}
+                              </button>
+                            )}
+                          </blockquote>
+
+                          {/* Closing Quote */}
+                          <div className="text-right text-2xl sm:text-3xl text-emerald-200 font-serif -mt-2">
+                            "
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Footer */}
+                      <div
+                        className={`mt-4 pt-4 border-t ${
+                          theme === "dark" ? "border-green-700" : "border-emerald-100"
+                        }`}
+                      >
+                        <p
+                          className={`text-xs text-right ${
+                            theme === "dark" ? "text-green-400" : "text-gray-400"
+                          }`}
+                        >
+                          {format(new Date(creationDate), "MMMM d, yyyy")}
                         </p>
-                        <p className={`text-xs sm:text-sm line-clamp-1 ${
-                          theme === "dark" ? "text-gray-400" : "text-gray-500"
-                        }`}>
-                          {company}
-                        </p>
                       </div>
                     </div>
-
-                    {/* Testimonial Text */}
-                    <div className="flex-grow">
-                      <div className="relative">
-                        {/* Quote Icon */}
-                        <div className="absolute -top-2 -left-1 text-2xl sm:text-3xl text-blue-200 font-serif">
-                          "
-                        </div>
-
-                        <blockquote className={`text-xs sm:text-sm lg:text-base leading-relaxed pl-4 italic ${
-                          theme === "dark" ? "text-gray-300" : "text-gray-700"
-                        }`}>
-                          {displayText}
-                          {shouldTruncate && !isExpanded && "..."}
-                          {shouldTruncate && (
-                            <button
-                              className={`ml-1 font-medium underline transition-colors ${
-                                theme === "dark" ? "text-blue-400 hover:text-blue-300" : "text-blue-600 hover:text-blue-800"
-                              }`}
-                              onClick={() => toggleReadMore(index)}
-                            >
-                              {isExpanded
-                                ? ready
-                                  ? t("ui.readLess")
-                                  : "read less"
-                                : ready
-                                  ? t("ui.readMore")
-                                  : "read more"}
-                            </button>
-                          )}
-                        </blockquote>
-
-                        {/* Closing Quote */}
-                        <div className="text-right text-2xl sm:text-3xl text-blue-200 font-serif -mt-2">
-                          "
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Footer */}
-                    <div className={`mt-4 pt-4 border-t ${
-                      theme === "dark" ? "border-gray-700" : "border-gray-100"
-                    }`}>
-                      <p className="text-xs text-gray-400 text-right">
-                        {format(new Date(creationDate), "MMMM d, yyyy")}
-                      </p>
-                    </div>
-                  </div>
-                </Card>
+                  </Card>
+                </div>
               </div>
             );
           })}
@@ -225,18 +245,44 @@ const Testimonies = () => {
         }
 
         .slick-dots li button:before {
-          color: #3b82f6 !important;
+          color: #10b981 !important;
           font-size: 12px !important;
           opacity: 0.5 !important;
         }
 
         .custom-dots li.slick-active div {
-          border-color: #3b82f6 !important;
+          border-color: #10b981 !important;
+        }
+
+        .testimonial-slide-stretch,
+        .testimonial-card {
+          height: 100%;
+        }
+
+        .slick-slider .slick-track {
+          display: flex;
+          align-items: stretch;
+        }
+
+        .slick-slide {
+          height: auto;
+          display: flex;
+        }
+
+        .testimonial-card {
+          width: 100%;
+          height: 100%;
+        }
+
+        .testimonial-slide-stretch {
+          width: 100%;
+          display: flex;
+          flex: 1 1 auto;
         }
 
         .custom-dots li.slick-active button:before {
           opacity: 1 !important;
-          color: #1d4ed8 !important;
+          color: #059669 !important;
         }
 
         .slick-arrow {

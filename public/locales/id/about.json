@@ -9,53 +9,51 @@
     },
     "workExperience": [
         {
-            "title": "April 2025 - Oktober 2025",
-            "cardTitle": "Padepokan 79",
-            "cardSubtitle": "Pengembang Senior Web Front-end di PT NTT Data Indonesia",
-            "responsibilities": "Tanggung Jawab:",
+            "title": "Apr 2025 - Okt 2026",
+            "cardTitle": "PT Padepokan Tujuh Sembilan",
+            "cardSubtitle": "Front-End Developer · Onsite di PT NTT Data Indonesia · Kontrak",
+            "responsibilities": "Tanggung Jawab",
             "tasks": [
-                "Membangun aplikasi website bernama 'Versacore' dengan framework Next JS versi 15",
-                "Membangun sistem client-side dan integrasi API",
-                "Membuat komponen React yang dapat digunakan kembali, custom hooks dan fungsi",
-                "Meningkatkan performa website",
-                "Berkoordinasi dengan tim PT NTT Data Indonesia untuk kebutuhan proyek"
+                "Bertanggung jawab atas siklus perancangan, pengembangan, dan pemeliharaan aplikasi web, memastikan setiap fitur selaras dengan tujuan fungsional bisnis",
+                "Memanfaatkan tools pengembangan berbasis AI (Claude CLI) untuk mempercepat dan mengoptimalkan efisiensi pengembangan",
+                "Mengelola repositori, mengelola kontrol versi, branching, dan tinjauan kode",
+                "Berkoordinasi dengan tim lintas fungsi terkait kebutuhan bisnis dan menerjemahkan kebutuhan bisnis menjadi fitur produk yang fungsional",
+                "Mengawal evaluasi produk secara berkala berdasarkan masukan (feedback) dari pengguna akhir guna meningkatkan tingkat kepuasan dan kelancaran alur kerja sistem"
             ]
         },
         {
-            "title": "Oktober 2021 - April 2025",
+            "title": "Okt 2021 - Apr 2025",
             "cardTitle": "PT Telekomunikasi Indonesia",
-            "cardSubtitle": "Pengembang Web Front-end",
-            "responsibilities": "Tanggung Jawab:",
+            "cardSubtitle": "Front-End Developer · Kontrak",
+            "responsibilities": "Tanggung Jawab",
             "tasks": [
-                "Membangun aplikasi website dengan framework Next JS",
-                "Membangun sistem client-side dan integrasi API",
-                "Membuat komponen React yang dapat digunakan kembali, custom hooks dan fungsi",
-                "Meningkatkan performa website",
-                "Unit testing untuk mengecek kualitas kode",
-                "Berkolaborasi dengan tim marketing untuk optimasi SEO",
-                "Maintainer repository"
+                "Bertanggung jawab atas siklus perancangan, pengembangan, dan pemeliharaan produk web, memastikan setiap fitur selaras dengan tujuan fungsional bisnis",
+                "Mengembangkan sistem sisi klien yang menerjemahkan desain UX menjadi antarmuka interaktif, integrasi API dan pengelolaan data",
+                "Berkoordinasi dan berkolaborasi dengan berbagai tim lintas divisi, antara lain product owner, DevOps, desainer, pengujian kualitas, dan pemasaran digital, dalam perencanaan fitur aplikasi",
+                "Mengoordinasikan pengujian kualitas (QA testing) dan dokumentasi produk guna memastikan seluruh fitur memenuhi standar fungsional sebelum diserahterimakan kepada pengguna akhir"
             ]
         },
         {
-            "title": "Oktober 2019 - Oktober 2021",
+            "title": "Okt 2019 - Okt 2021",
             "cardTitle": "PT Radya Anugerah Digital",
-            "cardSubtitle": "Pengembang Web Front-end",
-            "responsibilities": "Tanggung Jawab:",
+            "cardSubtitle": "Front-End Developer · Kontrak",
+            "responsibilities": "Tanggung Jawab",
             "tasks": [
-                "Membangun website dengan framework Angular 7",
-                "Membangun sistem client-side website dan integrasi API",
-                "Berkolaborasi dengan tim untuk memenuhi kebutuhan klien"
+                "Bertanggung jawab atas siklus perancangan, pengembangan, dan pemeliharaan produk web, memastikan setiap fitur selaras dengan tujuan fungsional bisnis",
+                "Menerjemahkan desain antarmuka menjadi fitur website yang interaktif dan fungsional, melakukan integrasi dan pengelolaan data pada aplikasi",
+                "Berkoordinasi dan berkolaborasi dengan klien dalam perencanaan dan pelaksanaan proyek",
+                "Menganalisis kebutuhan bisnis dan menerjemahkannya menjadi fitur produk yang fungsional"
             ]
         },
         {
-            "title": "Juni 2017 - Oktober 2017",
+            "title": "Jun 2017 - Okt 2017",
             "cardTitle": "PT Telekomunikasi Indonesia",
-            "cardSubtitle": "Magang Cloud dan Node",
-            "responsibilities": "Tanggung Jawab:",
+            "cardSubtitle": "Cloud & Infrastruktur · Intern",
+            "responsibilities": "Tanggung Jawab",
             "tasks": [
-                "Meneliti platform OpenStack",
-                "Menginstal software ke server untuk kebutuhan staff",
-                "Membantu tugas harian staff"
+                "Meneliti platform cloud OpenStack untuk pengadaan infrastruktur perusahaan",
+                "Memasang dan mengonfigurasi perangkat lunak server untuk mendukung kebutuhan staf internal",
+                "Mendukung pekerjaan administratif staf internal"
             ]
         }
     ],

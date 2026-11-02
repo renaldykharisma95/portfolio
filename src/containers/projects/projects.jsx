@@ -45,8 +45,8 @@ const Projects = () => {
 
   const customPaging = (i) => (
     <div className="w-20 h-14 cursor-pointer group">
-      <div className={`w-full h-full rounded-lg overflow-hidden border-2 group-hover:border-blue-500 transition-all duration-300 shadow-md hover:shadow-lg ${
-        theme === "dark" ? "bg-gray-800" : "bg-white"
+      <div className={`w-full h-full rounded-lg overflow-hidden border-2 group-hover:border-emerald-500 transition-all duration-300 shadow-md hover:shadow-lg ${
+        theme === "dark" ? "bg-green-900" : "bg-white"
       }`}>
         <img
           src={projectsData[i]?.image}
@@ -71,7 +71,7 @@ const Projects = () => {
     <div key={idx} className={`group relative px-2 sm:px-4 mb-8 md:mb-0`}>
       <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto">
         <div className={`relative overflow-hidden rounded-2xl shadow-2xl p-4 sm:p-6 hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02] ${
-          theme === "dark" ? "bg-gray-800" : "bg-white"
+          theme === "dark" ? "bg-green-900" : "bg-white"
         }`}>
           {/* Project Image */}
           <div className="relative overflow-hidden rounded-xl mb-4">
@@ -106,7 +106,7 @@ const Projects = () => {
               {item.title || `Project ${idx + 1}`}
             </h3>
             <p className={`text-sm line-clamp-3 leading-relaxed ${
-              theme === "dark" ? "text-gray-300" : "text-gray-600"
+              theme === "dark" ? "text-green-100" : "text-gray-600"
             }`}>
               {item.description.substring(0, 120)}...
             </p>
@@ -114,7 +114,7 @@ const Projects = () => {
               <button
                 onClick={() => handleEyeClick(item)}
                 className={`inline-flex items-center gap-2 font-medium text-sm transition-colors duration-200 ${
-                  theme === "dark" ? "text-blue-400 hover:text-blue-300" : "text-blue-600 hover:text-blue-800"
+                  theme === "dark" ? "text-emerald-300 hover:text-emerald-200" : "text-emerald-700 hover:text-emerald-900"
                 }`}
               >
                 <span>View Details</span>
@@ -142,7 +142,7 @@ const Projects = () => {
               type="button"
               className={`absolute left-2 top-1/2 -translate-y-1/2 z-30 rounded-full p-3 shadow-lg transition-all duration-200 backdrop-blur-sm border ${
                 theme === "dark"
-                  ? "bg-gray-800/90 hover:bg-gray-700 text-gray-200 hover:text-white border-gray-700"
+                  ? "bg-green-900/90 hover:bg-green-800 text-green-100 hover:text-white border-green-800"
                   : "bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 border-gray-200"
               }`}
               onClick={(e) => {
@@ -170,7 +170,7 @@ const Projects = () => {
               type="button"
               className={`absolute right-2 top-1/2 -translate-y-1/2 z-30 rounded-full p-3 shadow-lg transition-all duration-200 backdrop-blur-sm border ${
                 theme === "dark"
-                  ? "bg-gray-800/90 hover:bg-gray-700 text-gray-200 hover:text-white border-gray-700"
+                  ? "bg-green-900/90 hover:bg-green-800 text-green-100 hover:text-white border-green-800"
                   : "bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 border-gray-200"
               }`}
               onClick={(e) => {
@@ -205,8 +205,8 @@ const Projects = () => {
       id="projects"
       className={`min-h-screen w-full flex flex-col items-center justify-center py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 transition-colors duration-300 ${
         theme === "dark"
-          ? "bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
-          : "bg-gradient-to-br from-gray-50 via-white to-blue-50"
+          ? "bg-gradient-to-br from-green-950 via-green-900 to-teal-950"
+          : "bg-gradient-to-br from-emerald-50 via-white to-teal-50"
       }`}
     >
       <style>{`
@@ -233,7 +233,7 @@ const Projects = () => {
         }
 
         .custom-dots li.slick-active > div > div {
-          border-color: #3b82f6 !important;
+          border-color: #10b981 !important;
           transform: scale(1.1) !important;
         }
 
@@ -249,14 +249,14 @@ const Projects = () => {
       <div className="text-center mb-16 max-w-4xl">
         <h1 className={`text-4xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent mb-4 ${
           theme === "dark"
-            ? "bg-gradient-to-r from-white via-blue-300 to-white"
-            : "bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900"
+            ? "bg-gradient-to-r from-white via-emerald-300 to-white"
+            : "bg-gradient-to-r from-gray-900 via-emerald-700 to-gray-900"
         }`}>
           {ready ? t("title") : "Projects"}
         </h1>
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full mx-auto mb-6"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full mx-auto mb-6"></div>
         <p className={`text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto ${
-          theme === "dark" ? "text-gray-300" : "text-gray-600"
+          theme === "dark" ? "text-green-100" : "text-gray-600"
         }`}>
           {ready
             ? t("subtitle")
@@ -322,15 +322,15 @@ const Projects = () => {
         >
           <div
             className={`rounded-2xl w-full max-w-sm sm:max-w-md lg:max-w-4xl xl:max-w-5xl max-h-[90vh] overflow-hidden shadow-2xl ${
-              theme === "dark" ? "bg-gray-800" : "bg-white"
+              theme === "dark" ? "bg-green-900" : "bg-white"
             }`}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
             <div className={`flex justify-between items-center p-6 border-b ${
               theme === "dark"
-                ? "bg-gradient-to-r from-gray-900 to-gray-800 border-gray-700"
-                : "bg-gradient-to-r from-blue-50 to-indigo-50 border-gray-100"
+                ? "bg-gradient-to-r from-green-950 to-green-900 border-green-800"
+                : "bg-gradient-to-r from-emerald-50 to-teal-50 border-emerald-100"
             }`}>
               <div>
                 <h2 className={`text-xl sm:text-2xl lg:text-3xl font-bold ${
@@ -343,7 +343,7 @@ const Projects = () => {
                 onClick={closeModal}
                 className={`text-2xl sm:text-3xl flex-shrink-0 ml-4 w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-200 ${
                   theme === "dark"
-                    ? "text-gray-400 hover:text-white hover:bg-gray-700"
+                    ? "text-green-300 hover:text-white hover:bg-green-800"
                     : "text-gray-400 hover:text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -361,7 +361,7 @@ const Projects = () => {
                       src={selectedProject.image}
                       alt="Project"
                       className={`w-full h-64 sm:h-80 lg:h-96 object-contain ${
-                        theme === "dark" ? "bg-gray-900" : "bg-gray-50"
+                        theme === "dark" ? "bg-green-950" : "bg-gray-50"
                       }`}
                     />
                   </div>
@@ -374,7 +374,7 @@ const Projects = () => {
                       theme === "dark" ? "text-white" : "text-gray-800"
                     }`}>
                       <svg
-                        className={`w-5 h-5 ${theme === "dark" ? "text-blue-400" : "text-blue-600"}`}
+                        className={`w-5 h-5 ${theme === "dark" ? "text-emerald-300" : "text-emerald-600"}`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -389,7 +389,7 @@ const Projects = () => {
                       Project Overview
                     </h3>
                     <p className={`leading-relaxed text-justify ${
-                      theme === "dark" ? "text-gray-300" : "text-gray-700"
+                      theme === "dark" ? "text-green-100" : "text-gray-700"
                     }`}>
                       {selectedProject.description}
                     </p>
@@ -422,8 +422,8 @@ const Projects = () => {
                             key={idx}
                             className={`px-3 py-1.5 border rounded-full text-sm font-medium transition-all duration-200 hover:shadow-sm ${
                               theme === "dark"
-                                ? "bg-gradient-to-r from-blue-900 to-indigo-900 text-blue-200 border-blue-700"
-                                : "bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-800 border-blue-200"
+                                ? "bg-gradient-to-r from-green-900 to-emerald-900 text-emerald-200 border-green-700"
+                                : "bg-gradient-to-r from-emerald-50 to-teal-50 text-emerald-800 border-emerald-200"
                             }`}
                           >
                             {tech}
